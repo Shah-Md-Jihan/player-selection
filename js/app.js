@@ -29,3 +29,22 @@ document.getElementById('calculate_button').addEventListener('click', function (
     document.getElementById('playerExpense').innerText = newPlayerExpense;
 
 });
+
+
+// calculate total button functionality 
+document.getElementById('calculate_total').addEventListener('click', function () {
+
+    const PlayerExpense = parseFloat(document.getElementById('playerExpense').innerText);
+    const previousManagerSelary = parseFloat(document.getElementById('managerSelary').value);
+    document.getElementById('managerSelary').value = '';
+    const previousCoachSelary = parseFloat(document.getElementById('coachSelary').value);
+    document.getElementById('coachSelary').value = '';
+    if (isNaN(PlayerExpense) || isNaN(previousManagerSelary) || isNaN(previousCoachSelary)) {
+        alert('Please input a numeric value!');
+    } else {
+        const newGrandTotal = PlayerExpense + previousManagerSelary + previousCoachSelary;
+        document.getElementById('grandTotal').innerText = newGrandTotal;
+
+    }
+
+});
