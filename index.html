@@ -209,10 +209,11 @@
                             <div class="card-body">
                                 <div class="d-flex">
                                     <label>Per Player</label>
-                                    <input type="text" class="w-50 ms-2">
+                                    <input id="playerRate" type="text" class="w-50 ms-2">
                                 </div>
-                                <a href="#" class="btn btn-primary w-100 rounded-0  my-2">Calculate</a>
-                                <p><strong>Player Expenses: $000</strong></p>
+                                <button id="calculate_button" href="#"
+                                    class="btn btn-primary w-100 rounded-0  my-2">Calculate</button>
+                                <p><strong>Player Expenses: $ <span id="playerExpense">000</span> </strong></p>
                                 <div class="d-flex mb-2">
                                     <label>Manager</label>
                                     <input type="text" class="w-50 ms-2">

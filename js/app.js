@@ -16,3 +16,16 @@ document.getElementById('player5_btn').addEventListener('click', function () {
 document.getElementById('player6_btn').addEventListener('click', function () {
     playerSelection('anderson', 'player6_btn');
 });
+
+
+// calcutale button actions 
+document.getElementById('calculate_button').addEventListener('click', function () {
+    const playerRate = parseFloat(document.getElementById('playerRate').value);
+    document.getElementById('playerRate').value = '';
+    const players = document.getElementById('PlayerNameContainer').childNodes.length;
+    const actualPlayers = players - 1;
+    const previousPlayerExpense = document.getElementById('playerExpense').innerText;
+    const newPlayerExpense = playerRate * actualPlayers;
+    document.getElementById('playerExpense').innerText = newPlayerExpense;
+
+});
