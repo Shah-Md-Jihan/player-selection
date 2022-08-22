@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+.banner_title {
+    font-family: 'Lobster', cursive;
+    color: #FF5E19;
+    font-size: 3.5rem;
+}
