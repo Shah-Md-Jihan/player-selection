@@ -10,3 +10,20 @@ body {
     color: #FF5E19;
     font-size: 3.5rem;
 }
+
+.font_size {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+
+
+.field_color {
+    background-color: #000000;
+}
+
+.unerline_style {
+    border-bottom: 2px solid white;
+    width: 90%;
+    margin: 0 auto;
+}
