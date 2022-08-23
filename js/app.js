@@ -1,3 +1,4 @@
+// all player selection button 
 document.getElementById('player1_btn').addEventListener('click', function () {
     playerSelection('max-well', 'player1_btn');
 });
@@ -16,6 +17,15 @@ document.getElementById('player5_btn').addEventListener('click', function () {
 document.getElementById('player6_btn').addEventListener('click', function () {
     playerSelection('anderson', 'player6_btn');
 });
+document.getElementById('player7_btn').addEventListener('click', function () {
+    playerSelection('babar', 'player7_btn');
+});
+document.getElementById('player8_btn').addEventListener('click', function () {
+    playerSelection('archer', 'player8_btn');
+});
+document.getElementById('player9_btn').addEventListener('click', function () {
+    playerSelection('warner', 'player9_btn');
+});
 
 
 // calcutale button actions 
@@ -25,8 +35,13 @@ document.getElementById('calculate_button').addEventListener('click', function (
     const players = document.getElementById('PlayerNameContainer').childNodes.length;
     const actualPlayers = players - 1;
     const previousPlayerExpense = document.getElementById('playerExpense').innerText;
-    const newPlayerExpense = playerRate * actualPlayers;
-    document.getElementById('playerExpense').innerText = newPlayerExpense;
+    if (isNaN(playerRate)) {
+        alert("Please input a numeric value!");
+    } else {
+        const newPlayerExpense = playerRate * actualPlayers;
+        document.getElementById('playerExpense').innerText = newPlayerExpense;
+
+    }
 
 });
 
